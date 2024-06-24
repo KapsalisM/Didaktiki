@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Python</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Python Tutorial</h2>
+        <ul>
+            <li><a href="index.html">Python HOME</a></li>
+            <li><a href="Intro.html">Python Intro</a></li>
+            <li><a href="Variables.html">Python Variables</a></li>
+            <li><a href="Strings.html">Python Strings</a></li>
+            <li><a href="Booleans.html">Python Booleans</a></li>
+            <li><a href="Operators.html">Python Operators</a></li>
+            <li><a href="Logical.html">Python Logical Operators</a></li>
+            <li><a href="Lists.html">Python Lists</a></li>
+            <li><a href="IfElse.html">Python If...Else</a></li>
+            <li><a href="While.html">Python While Loops</a></li>
+            <li><a href="For.html">Python For Loops</a></li>
+            <li><a href="Functions.html">Python Functions</a></li>
+            <li><a href="Quiz.html">Quiz</a></li>
+            <li><a href="StackQueue.html">Stack Queue</a></li>
+            <li><a href="animation.html">Animation</a></li>
+        </ul>
+    </div>
+    <div class="content">
+    
+        <h1 id="stack">Stack</h1>
+        <div class="stack-container">
+            <button onclick="pushToStack()">Push</button>
+            <button onclick="popFromStack()">Pop</button>
+            <div class="stack" id="stack"></div>
+        </div>
+
+        <h1 id="queue">Queue</h1>
+        <div class="queue-container">
+            <button onclick="enqueue()">Enqueue</button>
+            <button onclick="dequeue()">Dequeue</button>
+            <div class="queue" id="queue"></div>
+        </div>
+    </div>
+
+    <script src="..\Backend\animation.js"></script>
+</body>
+</html>

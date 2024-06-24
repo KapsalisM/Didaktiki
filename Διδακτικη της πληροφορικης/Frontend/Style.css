@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+h2{
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+.try{
+    font-family: Arial, sans-serif;
+    margin:0;
+    display: flex;
+    background-color: #f4f4f9;
+}
+.sidebar {
+    width: 250px;
+    background-color: hsl(98, 56%, 45%);
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    position: fixed;
+    height: 100%;
+}
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar li {
+    position: relative;
+}
+.sidebar a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.sidebar a:hover {
+    background-color: #575757;
+}
+.sidebar li ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 250px;
+    width: 250px;
+    background-color: #444;
+    padding: 0;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+.sidebar li:hover ul {
+    display: block;
+}
+.sidebar li ul a {
+    background-color: #444;
+}
+.sidebar li ul a:hover {
+    background-color: #575757;
+}
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    width: 100%;
+    position: center;
+    text-align: center;
+    margin-left: 180px;
+}
+.content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+    .sidebar li ul {
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+}
+.variables{
+    width: 100%;
+    position: center;
+    text-align: center;
+}
+button{
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    height:30px;
+    font-size: 16px;
+    background-color: hsl(98, 56%, 45%);
+    cursor: pointer;
+}
